@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+}
+.icons{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    font-size: 25px;
+    gap: 30px;
+}
+
+/* .icons a{
+    min-height: 100px;
+} */
+
+.container>img{
+    background-color: black;
+    max-height: 180px;
+    max-height: 180px;
+    margin-top: -60px;
+    padding: 1%;
+   border-radius: 90px 90px 0 0 ;
+}
+
+.footersec{
+    width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: larger;
+}
+
+.footersec a:hover{
+    text-decoration: underline;
+}
+
+.getintouch{
+    font-size: 25px;
+}

@@ -1,0 +1,19 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 137vb;
+    background: url('https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png') no-repeat center center/cover;
+  }
+  
+  .login-form {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .pink-text{
+    color: #ea5d7e;
+  }
+  

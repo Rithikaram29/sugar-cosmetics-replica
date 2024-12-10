@@ -1,0 +1,70 @@
+.main{
+    background-image: url("https://images.sugarcosmetics.com/Homepage/03206b6c-5cd8-4631-ba61-20a1d78c0888.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% ;
+    background-size: cover;
+}
+
+.card{
+    max-width: 300px;
+    background-color: white;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    padding-top: 0%;
+}
+.empty{
+    height: 55px;
+}
+.buttondiv{
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    width: 100%;
+    padding: 6px;
+    gap: 2px;
+}
+.heart{
+    flex: 1;
+    height: 40px;
+    width: 40px;
+    font-size: larger;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cartbutton{
+    flex: 4;
+    background-color: black;
+    color: white;
+    margin: 0px 7px 0px 10px;
+    border-radius: 5px;
+}
+
+.card-button{
+    display: flex;
+}
+.card>img{
+    max-height: 250px;
+   border-radius: 10px;
+}
+
+.card>button{
+    background-color: black;
+    color: white;
+    
+}
+
+.sidebutton{
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    border-radius: 50%;
+}

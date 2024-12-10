@@ -1,0 +1,14 @@
+.loginpage{
+    display: flex;
+
+}
+
+.left-image{
+    flex: 0 0 37.6%;
+    background-image: url("https://media.sugarcosmetics.com/upload/authSIe2.jpg");
+    background-size: cover;
+}
+
+/* .login{
+    flex: 0 0 62.4%;
+} */

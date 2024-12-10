@@ -1,0 +1,17 @@
+.radio{
+    width: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.radio-button{
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.radio-selected{
+    background-color: black;
+}

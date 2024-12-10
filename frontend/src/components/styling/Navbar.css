@@ -74,3 +74,21 @@
       visibility: visible;
     }
   }
+
+
+  .searchbar{
+  
+    background-color: #212121;
+    border: 1px soild white;
+ 
+  }
+
+  .wrap-input{
+    display: flex;
+    justify-content: space-between;
+    width:45rem;
+    border: 1px solid grey;
+    background-color: #212121;
+    border-radius: 10px;
+    overflow: hidden;
+  }
