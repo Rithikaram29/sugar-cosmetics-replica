@@ -7,7 +7,7 @@
     { "src": "/api/(.*)", "dest": "api/index.js" }
   ],
   "env": {
-    "DATABASE_URL": "@database_url",
+    "MONGO_URI": "@mongo_uri",
     "SECRET_KEY": "@secret_key"
   }
 }
