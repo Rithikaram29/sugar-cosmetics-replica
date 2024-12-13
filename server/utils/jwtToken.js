@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
-dotenv.config();
-import secretkey from "./secretKey.js";
+dotenv.config({path: "../.env"});
 
 
+const secretkey = process.env.SECRET_KEY
+// console.log(secretkey)
 if (!secretkey) {
     throw new Error("SecretKey not set!");
 }

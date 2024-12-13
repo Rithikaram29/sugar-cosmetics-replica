@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv"
+dotenv.config({path: "../.env"})
 
-const mongoUri = "mongodb+srv://rithikaram293:Natty8mem@cluster0.wok3z.mongodb.net/sugarcosmetics?retryWrites=true&w=majority&appName=Cluster0"
+const mongoUri = process.env.MONGO_URI
+
 
 const connectDB = async () => {
     try {

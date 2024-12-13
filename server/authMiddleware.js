@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config();
 import jwt from "jsonwebtoken";
-import secretkey from "./utils/secretKey.js";
+// import secretkey from "./utils/secretKey.js";
 
+const secretkey = process.env.SECRET_KEY
 if (!secretkey) {
   throw new Error("Secret key is not set!");
 }
