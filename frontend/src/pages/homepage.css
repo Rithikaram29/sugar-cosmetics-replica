@@ -1,0 +1,26 @@
+.heading{
+    font-size: larger;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+.priceDrop{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.priceDrop>div{
+    width: 95%;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.priceDrop>img{
+    width: 95%;
+    
+}

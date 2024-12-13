@@ -1,51 +1,36 @@
 import { useEffect, useState } from "react";
-import "./styling/radioCarousel.css";
+import './styling/normalCarousel.css'
 
-const RadioCarouselElement = ({ array, no }) => {
+const NormalCarouselElement = ({ array, no }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesPerSlide = no;
   const slideLength = array.length;
-  const [isAutoSliding, setIsAutoSliding] = useState(true);
+  
 
   const nextSlide = () => {
-    setIsAutoSliding(false); // Stop auto-sliding on user interaction
     if (currentIndex + imagesPerSlide < slideLength) {
       setCurrentIndex(currentIndex + imagesPerSlide);
     } else {
-      setCurrentIndex(0); // Loop back to the start
+      setCurrentIndex(0); 
     }
   };
 
   const prevSlide = () => {
-    setIsAutoSliding(false); // Stop auto-sliding on user interaction
     if (currentIndex - imagesPerSlide >= 0) {
       setCurrentIndex(currentIndex - imagesPerSlide);
     } else {
-      setCurrentIndex(slideLength - imagesPerSlide); // Jump to the last slide
+      setCurrentIndex(slideLength - imagesPerSlide); 
     }
   };
 
-  useEffect(() => {
-    if (isAutoSliding) {
-      const timer = setInterval(() => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex + imagesPerSlide < slideLength
-            ? prevIndex + imagesPerSlide
-            : 0
-        );
-      }, 2000);
-
-      return () => clearInterval(timer); // Cleanup on unmount or dependency change
-    }
-  }, [isAutoSliding, currentIndex, imagesPerSlide, slideLength]);
 
   return (
-    <div className="carousel-container">
-      <div className="main relative overflow-hidden w-full h-full">
+    <div className="">
+      <div className=" relative overflow-hidden w-full h-full">
         {/* Previous Button */}
-        <div className="sidebuttondiv">
+        <div className="">
           <button
-            className={`sidebutton absolute top-1/2 left-2 opacity-50 hover:opacity-100 hover:text-white`}
+            className={`sidebutton absolute top-1/2 left-3 opacity-50 hover:opacity-100 hover:text-white`}
             onClick={prevSlide}
           >
             &lt;
@@ -53,24 +38,24 @@ const RadioCarouselElement = ({ array, no }) => {
         </div>
 
         {/* Carousel Images */}
-        <div className="card-button flex justify-center transition-transform duration-500 ease-in-out">
+        <div className="cardbox flex justify-center transition-transform duration-500 ease-in-out">
           {array
             .slice(currentIndex, currentIndex + imagesPerSlide)
             .map((image, index) => (
-              <div key={image.name + index} className="slide">
+              <div key={image.name + index} className="carddiv">
                 <img
                   src={image.img}
                   alt={image.name}
-                  className="bannerimg"
+                  className="cardimg"
                 />
               </div>
             ))}
         </div>
 
         {/* Next Button */}
-        <div className="sidebuttondiv">
+        <div className="">
           <button
-            className={`sidebutton absolute top-1/2 right-2 opacity-50 hover:opacity-100 hover:text-white`}
+            className={`sidebutton absolute top-1/2 right-3 opacity-50 hover:opacity-100 hover:text-white`}
             onClick={nextSlide}
           >
             &gt;
@@ -101,4 +86,4 @@ const RadioCarouselElement = ({ array, no }) => {
   );
 };
 
-export default RadioCarouselElement;
+export default NormalCarouselElement;

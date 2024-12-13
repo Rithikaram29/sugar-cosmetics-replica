@@ -1,0 +1,12 @@
+.cardimg{
+border-radius: 10px;
+margin: 2%;
+max-width: 500px;
+max-height: 300px;
+}
+
+.cardbox{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
