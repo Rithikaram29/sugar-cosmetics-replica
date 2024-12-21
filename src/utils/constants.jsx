@@ -1,0 +1,1 @@
+export const localHost = "https://sugar-backend-lcc2.onrender.com"
