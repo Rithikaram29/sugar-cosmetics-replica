@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { logo, background } from "../utils/Imagedata";
+import { logo, background } from "../utils/Imagedata.jsx";
 import "./styling/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,7 +12,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import { localHost } from "../utils/constants";
+import { localHost } from "../utils/constants.jsx";
 
 const Navbar = () => {
   const [user, setUser] = useState(null);

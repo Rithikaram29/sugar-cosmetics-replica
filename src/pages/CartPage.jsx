@@ -1,7 +1,7 @@
-import CartBody from '../components/CartBody';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import ReadMore from '../components/ReadMore';
+import CartBody from '../components/CartBody.jsx';
+import Footer from '../components/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
+import ReadMore from '../components/ReadMore.jsx';
 
 const CartPage = () => {
   return (

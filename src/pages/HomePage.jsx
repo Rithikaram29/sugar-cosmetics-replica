@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import CarouselElement from '../components/carouselElement';
+import Navbar from '../components/Navbar.jsx';
+import CarouselElement from '../components/carouselElement.jsx';
 import { bestSeller, newLaunch, sugarPlay, topCarousel, priceDrop, executiveKit, sugarBlogs, sugarIcons } from '../utils/allData';
-import Footer from '../components/Footer';
-import RadioCarouselElement from '../components/radioCarousel';
-import NormalCarouselElement from '../components/normalCarousel';
-import ReadMore from '../components/ReadMore';
+import Footer from '../components/Footer.jsx';
+import RadioCarouselElement from '../components/radioCarousel.jsx';
+import NormalCarouselElement from '../components/NormalCarousel.jsx';
+import ReadMore from '../components/ReadMore.jsx';
 import './homepage.css'
 
 // const bestSeller = require('../utils/allData')

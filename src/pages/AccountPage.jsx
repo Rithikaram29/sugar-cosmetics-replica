@@ -1,7 +1,7 @@
-import AccountBody from "../components/AccountBody";
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import ReadMore from '../components/ReadMore';
+import AccountBody from "../components/AccountBody.jsx";
+import Footer from '../components/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
+import ReadMore from '../components/ReadMore.jsx';
 
 
 const AccountPage = () => {

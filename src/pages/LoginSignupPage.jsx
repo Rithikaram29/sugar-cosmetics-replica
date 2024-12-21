@@ -1,6 +1,6 @@
 import React from "react";
 import "./loginSignupPage.css";
-import Login from "../components/LoginSignup";
+import Login from "../components/LoginSignup.jsx";
 
 const LoginSignupPage = () => {
   return (

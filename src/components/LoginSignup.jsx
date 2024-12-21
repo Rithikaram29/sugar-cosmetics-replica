@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./styling/loginSignup.css";
-import { localHost } from "../utils/constants";
+import { localHost } from "../utils/constants.jsx";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 

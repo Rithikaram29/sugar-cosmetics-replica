@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { localHost } from "../utils/constants";
+import { localHost } from "../utils/constants.jsx";
 import { useNavigate } from "react-router-dom";
 
 const AccountBody = () => {
